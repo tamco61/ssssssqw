@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="sh">
+    <h2 style="padding-left:100px;">Оформление каюты</h2>
+<table>
+    <tr class="gg"><th><div class="tab">Цвет стен</div></th><th><div class="tab">Эмблема</div></th></tr>
+    <tr><td>{% if sex == 'male' %} {% if age < 21 %} <img src="/static/img/male15.png"/> {% else%} <img src="/static/img/male25.png"/>{% endif %} {% else %}{% if age < 21 %} <img src="/static/img/female15.png"/> {% else%} <img src="/static/img/female25.png"/>{% endif %}{% endif %}</td>
+
+
+        <td><div class="mg">{% if age < 21 %} <img src="/static/img/inopl1.jpg"/> {% else %} <img src="/static/img/inopl2.jpg"/> {% endif %}</div></td></tr>
+</table>
+</div>
+{% endblock %}
